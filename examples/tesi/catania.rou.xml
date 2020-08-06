@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<routes>
+   <vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="2.5" minGap="2.5" maxSpeed="16" color="1,1,0"/>
+   <flow id="flow0" type="vtype0" beg="0" end="0" number="24" from="176458817#0" to="80440362#0"/>
+   <flow id="flow1" type="vtype0" beg="0" end="0" number="24" from="581663152#0" to="80440362#0"/>
+   <flow id="flow2" type="vtype0" beg="0" end="0" number="10" from="581663152#0" to="23650681#0"/>
+   <flow id="flow3" type="vtype0" beg="0" end="0" number="12" from="176458817#0" to="23650681#0"/>
+</routes>

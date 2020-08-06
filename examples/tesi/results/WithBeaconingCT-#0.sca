@@ -1,0 +1,339 @@
+version 2
+run WithBeaconingCT-0-20200806-16:01:15-71895
+attr configname WithBeaconingCT
+attr datetime 20200806-16:01:15
+attr experiment WithBeaconingCT
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RSUExampleCatania
+attr processid 71895
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.node[*].applType "\"TraCICT11p\""
+param *.rsu[*].appl.sendBeacons true
+param *.node[*].appl.sendBeacons true
+param *.playgroundSizeX 3000m
+param *.playgroundSizeY 3000m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"catania.launchd.xml\")"
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1000 m"
+param *.node[*].applType "\"TraCIDemo11p\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+scalar RSUExampleCatania.node[1].appl generatedWSMs 1
+scalar RSUExampleCatania.node[1].appl receivedWSMs 16
+scalar RSUExampleCatania.node[1].appl generatedBSMs 121
+scalar RSUExampleCatania.node[1].appl receivedBSMs 1802
+scalar RSUExampleCatania.node[1].appl generatedWSAs 0
+scalar RSUExampleCatania.node[1].appl receivedWSAs 0
+scalar RSUExampleCatania.node[1].nic.phy80211p busyTime 0.0023852561983471
+scalar RSUExampleCatania.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[1].nic.mac1609_4 ReceivedBroadcasts 1818
+scalar RSUExampleCatania.node[1].nic.mac1609_4 SentPackets 122
+scalar RSUExampleCatania.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[1].nic.mac1609_4 SNIRLostPackets 919
+scalar RSUExampleCatania.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[1].nic.mac1609_4 TotalLostPackets 919
+scalar RSUExampleCatania.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[1].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[1].nic.mac1609_4 TimesIntoBackoff 122
+scalar RSUExampleCatania.node[1].nic.mac1609_4 SlotsBackoff 190
+scalar RSUExampleCatania.node[1].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[1].nic.mac1609_4 totalBusyTime 0.30145
+scalar RSUExampleCatania.node[1].veinsmobility startTime 1
+scalar RSUExampleCatania.node[1].veinsmobility totalTime 120
+scalar RSUExampleCatania.node[1].veinsmobility stopTime 122
+scalar RSUExampleCatania.node[1].veinsmobility minSpeed 2.5772626519203
+scalar RSUExampleCatania.node[1].veinsmobility maxSpeed 15.986513594398
+scalar RSUExampleCatania.node[1].veinsmobility totalDistance 1657.9597709841
+scalar RSUExampleCatania.node[1].veinsmobility totalCO2Emission 380.10887602317
+scalar RSUExampleCatania.node[3].appl generatedWSMs 1
+scalar RSUExampleCatania.node[3].appl receivedWSMs 18
+scalar RSUExampleCatania.node[3].appl generatedBSMs 120
+scalar RSUExampleCatania.node[3].appl receivedBSMs 1949
+scalar RSUExampleCatania.node[3].appl generatedWSAs 0
+scalar RSUExampleCatania.node[3].appl receivedWSAs 0
+scalar RSUExampleCatania.node[3].nic.phy80211p busyTime 0.0024976666666666
+scalar RSUExampleCatania.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[3].nic.mac1609_4 ReceivedBroadcasts 1967
+scalar RSUExampleCatania.node[3].nic.mac1609_4 SentPackets 121
+scalar RSUExampleCatania.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[3].nic.mac1609_4 SNIRLostPackets 878
+scalar RSUExampleCatania.node[3].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[3].nic.mac1609_4 TotalLostPackets 878
+scalar RSUExampleCatania.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[3].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[3].nic.mac1609_4 TimesIntoBackoff 121
+scalar RSUExampleCatania.node[3].nic.mac1609_4 SlotsBackoff 179
+scalar RSUExampleCatania.node[3].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[3].nic.mac1609_4 totalBusyTime 0.312553
+scalar RSUExampleCatania.node[3].veinsmobility startTime 3
+scalar RSUExampleCatania.node[3].veinsmobility totalTime 119
+scalar RSUExampleCatania.node[3].veinsmobility stopTime 123
+scalar RSUExampleCatania.node[3].veinsmobility minSpeed 2.0125663528328
+scalar RSUExampleCatania.node[3].veinsmobility maxSpeed 15.991900665918
+scalar RSUExampleCatania.node[3].veinsmobility totalDistance 1654.4636869576
+scalar RSUExampleCatania.node[3].veinsmobility totalCO2Emission 394.55657996011
+scalar RSUExampleCatania.node[4].appl generatedWSMs 0
+scalar RSUExampleCatania.node[4].appl receivedWSMs 20
+scalar RSUExampleCatania.node[4].appl generatedBSMs 122
+scalar RSUExampleCatania.node[4].appl receivedBSMs 2136
+scalar RSUExampleCatania.node[4].appl generatedWSAs 0
+scalar RSUExampleCatania.node[4].appl receivedWSAs 0
+scalar RSUExampleCatania.node[4].nic.phy80211p busyTime 0.0026668196721311
+scalar RSUExampleCatania.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[4].nic.mac1609_4 ReceivedBroadcasts 2156
+scalar RSUExampleCatania.node[4].nic.mac1609_4 SentPackets 122
+scalar RSUExampleCatania.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[4].nic.mac1609_4 SNIRLostPackets 933
+scalar RSUExampleCatania.node[4].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[4].nic.mac1609_4 TotalLostPackets 933
+scalar RSUExampleCatania.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[4].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[4].nic.mac1609_4 TimesIntoBackoff 122
+scalar RSUExampleCatania.node[4].nic.mac1609_4 SlotsBackoff 179
+scalar RSUExampleCatania.node[4].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[4].nic.mac1609_4 totalBusyTime 0.338162
+scalar RSUExampleCatania.node[4].veinsmobility startTime 5
+scalar RSUExampleCatania.node[4].veinsmobility totalTime 121
+scalar RSUExampleCatania.node[4].veinsmobility stopTime 127
+scalar RSUExampleCatania.node[4].veinsmobility minSpeed 0.43621021959526
+scalar RSUExampleCatania.node[4].veinsmobility maxSpeed 15.990193969943
+scalar RSUExampleCatania.node[4].veinsmobility totalDistance 1663.0180724084
+scalar RSUExampleCatania.node[4].veinsmobility totalCO2Emission 407.63548666727
+scalar RSUExampleCatania.node[7].appl generatedWSMs 0
+scalar RSUExampleCatania.node[7].appl receivedWSMs 21
+scalar RSUExampleCatania.node[7].appl generatedBSMs 123
+scalar RSUExampleCatania.node[7].appl receivedBSMs 2372
+scalar RSUExampleCatania.node[7].appl generatedWSAs 0
+scalar RSUExampleCatania.node[7].appl receivedWSAs 0
+scalar RSUExampleCatania.node[7].nic.phy80211p busyTime 0.0028837723577235
+scalar RSUExampleCatania.node[7].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[7].nic.mac1609_4 ReceivedBroadcasts 2393
+scalar RSUExampleCatania.node[7].nic.mac1609_4 SentPackets 123
+scalar RSUExampleCatania.node[7].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[7].nic.mac1609_4 SNIRLostPackets 977
+scalar RSUExampleCatania.node[7].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[7].nic.mac1609_4 TotalLostPackets 977
+scalar RSUExampleCatania.node[7].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[7].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[7].nic.mac1609_4 TimesIntoBackoff 123
+scalar RSUExampleCatania.node[7].nic.mac1609_4 SlotsBackoff 182
+scalar RSUExampleCatania.node[7].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[7].nic.mac1609_4 totalBusyTime 0.367619
+scalar RSUExampleCatania.node[7].veinsmobility startTime 8
+scalar RSUExampleCatania.node[7].veinsmobility totalTime 122
+scalar RSUExampleCatania.node[7].veinsmobility stopTime 131
+scalar RSUExampleCatania.node[7].veinsmobility minSpeed 2.0819719219108
+scalar RSUExampleCatania.node[7].veinsmobility maxSpeed 15.997369743092
+scalar RSUExampleCatania.node[7].veinsmobility totalDistance 1666.9439814511
+scalar RSUExampleCatania.node[7].veinsmobility totalCO2Emission 400.09372251653
+scalar RSUExampleCatania.node[8].appl generatedWSMs 1
+scalar RSUExampleCatania.node[8].appl receivedWSMs 22
+scalar RSUExampleCatania.node[8].appl generatedBSMs 123
+scalar RSUExampleCatania.node[8].appl receivedBSMs 2555
+scalar RSUExampleCatania.node[8].appl generatedWSAs 0
+scalar RSUExampleCatania.node[8].appl receivedWSAs 0
+scalar RSUExampleCatania.node[8].nic.phy80211p busyTime 0.0030247804878048
+scalar RSUExampleCatania.node[8].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[8].nic.mac1609_4 ReceivedBroadcasts 2577
+scalar RSUExampleCatania.node[8].nic.mac1609_4 SentPackets 124
+scalar RSUExampleCatania.node[8].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[8].nic.mac1609_4 SNIRLostPackets 961
+scalar RSUExampleCatania.node[8].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[8].nic.mac1609_4 TotalLostPackets 961
+scalar RSUExampleCatania.node[8].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[8].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[8].nic.mac1609_4 TimesIntoBackoff 124
+scalar RSUExampleCatania.node[8].nic.mac1609_4 SlotsBackoff 194
+scalar RSUExampleCatania.node[8].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[8].nic.mac1609_4 totalBusyTime 0.385196
+scalar RSUExampleCatania.node[8].veinsmobility startTime 10
+scalar RSUExampleCatania.node[8].veinsmobility totalTime 122
+scalar RSUExampleCatania.node[8].veinsmobility stopTime 133
+scalar RSUExampleCatania.node[8].veinsmobility minSpeed 1.0007703726543
+scalar RSUExampleCatania.node[8].veinsmobility maxSpeed 15.994867252489
+scalar RSUExampleCatania.node[8].veinsmobility totalDistance 1648.4279701587
+scalar RSUExampleCatania.node[8].veinsmobility totalCO2Emission 411.92423332973
+scalar RSUExampleCatania.node[11].appl generatedWSMs 0
+scalar RSUExampleCatania.node[11].appl receivedWSMs 25
+scalar RSUExampleCatania.node[11].appl generatedBSMs 122
+scalar RSUExampleCatania.node[11].appl receivedBSMs 2674
+scalar RSUExampleCatania.node[11].appl generatedWSAs 0
+scalar RSUExampleCatania.node[11].appl receivedWSAs 0
+scalar RSUExampleCatania.node[11].nic.phy80211p busyTime 0.0031322622950819
+scalar RSUExampleCatania.node[11].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[11].nic.mac1609_4 ReceivedBroadcasts 2699
+scalar RSUExampleCatania.node[11].nic.mac1609_4 SentPackets 122
+scalar RSUExampleCatania.node[11].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[11].nic.mac1609_4 SNIRLostPackets 936
+scalar RSUExampleCatania.node[11].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[11].nic.mac1609_4 TotalLostPackets 936
+scalar RSUExampleCatania.node[11].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[11].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[11].nic.mac1609_4 TimesIntoBackoff 122
+scalar RSUExampleCatania.node[11].nic.mac1609_4 SlotsBackoff 189
+scalar RSUExampleCatania.node[11].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[11].nic.mac1609_4 totalBusyTime 0.394946
+scalar RSUExampleCatania.node[11].veinsmobility startTime 13
+scalar RSUExampleCatania.node[11].veinsmobility totalTime 121
+scalar RSUExampleCatania.node[11].veinsmobility stopTime 135
+scalar RSUExampleCatania.node[11].veinsmobility minSpeed 1.9304828760214
+scalar RSUExampleCatania.node[11].veinsmobility maxSpeed 15.986916664359
+scalar RSUExampleCatania.node[11].veinsmobility totalDistance 1658.515355204
+scalar RSUExampleCatania.node[11].veinsmobility totalCO2Emission 394.71498798656
+scalar RSUExampleCatania.node[12].appl generatedWSMs 1
+scalar RSUExampleCatania.node[12].appl receivedWSMs 27
+scalar RSUExampleCatania.node[12].appl generatedBSMs 122
+scalar RSUExampleCatania.node[12].appl receivedBSMs 2763
+scalar RSUExampleCatania.node[12].appl generatedWSAs 0
+scalar RSUExampleCatania.node[12].appl receivedWSAs 0
+scalar RSUExampleCatania.node[12].nic.phy80211p busyTime 0.0032275409836064
+scalar RSUExampleCatania.node[12].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[12].nic.mac1609_4 ReceivedBroadcasts 2790
+scalar RSUExampleCatania.node[12].nic.mac1609_4 SentPackets 123
+scalar RSUExampleCatania.node[12].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[12].nic.mac1609_4 SNIRLostPackets 958
+scalar RSUExampleCatania.node[12].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[12].nic.mac1609_4 TotalLostPackets 958
+scalar RSUExampleCatania.node[12].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[12].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[12].nic.mac1609_4 TimesIntoBackoff 123
+scalar RSUExampleCatania.node[12].nic.mac1609_4 SlotsBackoff 204
+scalar RSUExampleCatania.node[12].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[12].nic.mac1609_4 totalBusyTime 0.406803
+scalar RSUExampleCatania.node[12].veinsmobility startTime 15
+scalar RSUExampleCatania.node[12].veinsmobility totalTime 121
+scalar RSUExampleCatania.node[12].veinsmobility stopTime 137
+scalar RSUExampleCatania.node[12].veinsmobility minSpeed 0.48542966133155
+scalar RSUExampleCatania.node[12].veinsmobility maxSpeed 15.982553207921
+scalar RSUExampleCatania.node[12].veinsmobility totalDistance 1659.4817148712
+scalar RSUExampleCatania.node[12].veinsmobility totalCO2Emission 378.84110191941
+scalar RSUExampleCatania.node[14].appl generatedWSMs 1
+scalar RSUExampleCatania.node[14].appl receivedWSMs 28
+scalar RSUExampleCatania.node[14].appl generatedBSMs 121
+scalar RSUExampleCatania.node[14].appl receivedBSMs 2943
+scalar RSUExampleCatania.node[14].appl generatedWSAs 0
+scalar RSUExampleCatania.node[14].appl receivedWSAs 0
+scalar RSUExampleCatania.node[14].nic.phy80211p busyTime 0.0033625123966941
+scalar RSUExampleCatania.node[14].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[14].nic.mac1609_4 ReceivedBroadcasts 2971
+scalar RSUExampleCatania.node[14].nic.mac1609_4 SentPackets 122
+scalar RSUExampleCatania.node[14].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[14].nic.mac1609_4 SNIRLostPackets 903
+scalar RSUExampleCatania.node[14].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[14].nic.mac1609_4 TotalLostPackets 903
+scalar RSUExampleCatania.node[14].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[14].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[14].nic.mac1609_4 TimesIntoBackoff 122
+scalar RSUExampleCatania.node[14].nic.mac1609_4 SlotsBackoff 186
+scalar RSUExampleCatania.node[14].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[14].nic.mac1609_4 totalBusyTime 0.419802
+scalar RSUExampleCatania.node[14].veinsmobility startTime 18
+scalar RSUExampleCatania.node[14].veinsmobility totalTime 120
+scalar RSUExampleCatania.node[14].veinsmobility stopTime 139
+scalar RSUExampleCatania.node[14].veinsmobility minSpeed 2.1649090897059
+scalar RSUExampleCatania.node[14].veinsmobility maxSpeed 15.999715682236
+scalar RSUExampleCatania.node[14].veinsmobility totalDistance 1652.2719113686
+scalar RSUExampleCatania.node[14].veinsmobility totalCO2Emission 370.31586421315
+scalar RSUExampleCatania.node[16].appl generatedWSMs 0
+scalar RSUExampleCatania.node[16].appl receivedWSMs 30
+scalar RSUExampleCatania.node[16].appl generatedBSMs 123
+scalar RSUExampleCatania.node[16].appl receivedBSMs 3084
+scalar RSUExampleCatania.node[16].appl generatedWSAs 0
+scalar RSUExampleCatania.node[16].appl receivedWSAs 0
+scalar RSUExampleCatania.node[16].nic.phy80211p busyTime 0.0034441626016259
+scalar RSUExampleCatania.node[16].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[16].nic.mac1609_4 ReceivedBroadcasts 3114
+scalar RSUExampleCatania.node[16].nic.mac1609_4 SentPackets 123
+scalar RSUExampleCatania.node[16].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[16].nic.mac1609_4 SNIRLostPackets 920
+scalar RSUExampleCatania.node[16].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[16].nic.mac1609_4 TotalLostPackets 920
+scalar RSUExampleCatania.node[16].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[16].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[16].nic.mac1609_4 TimesIntoBackoff 123
+scalar RSUExampleCatania.node[16].nic.mac1609_4 SlotsBackoff 206
+scalar RSUExampleCatania.node[16].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[16].nic.mac1609_4 totalBusyTime 0.436547
+scalar RSUExampleCatania.node[16].veinsmobility startTime 20
+scalar RSUExampleCatania.node[16].veinsmobility totalTime 122
+scalar RSUExampleCatania.node[16].veinsmobility stopTime 143
+scalar RSUExampleCatania.node[16].veinsmobility minSpeed 1.3038731631487
+scalar RSUExampleCatania.node[16].veinsmobility maxSpeed 15.984675557772
+scalar RSUExampleCatania.node[16].veinsmobility totalDistance 1650.9977607798
+scalar RSUExampleCatania.node[16].veinsmobility totalCO2Emission 388.67792432378
+scalar RSUExampleCatania.node[18].appl generatedWSMs 0
+scalar RSUExampleCatania.node[18].appl receivedWSMs 29
+scalar RSUExampleCatania.node[18].appl generatedBSMs 124
+scalar RSUExampleCatania.node[18].appl receivedBSMs 3270
+scalar RSUExampleCatania.node[18].appl generatedWSAs 0
+scalar RSUExampleCatania.node[18].appl receivedWSAs 0
+scalar RSUExampleCatania.node[18].nic.phy80211p busyTime 0.0035312903225805
+scalar RSUExampleCatania.node[18].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar RSUExampleCatania.node[18].nic.mac1609_4 ReceivedBroadcasts 3299
+scalar RSUExampleCatania.node[18].nic.mac1609_4 SentPackets 124
+scalar RSUExampleCatania.node[18].nic.mac1609_4 SentAcknowledgements 0
+scalar RSUExampleCatania.node[18].nic.mac1609_4 SNIRLostPackets 872
+scalar RSUExampleCatania.node[18].nic.mac1609_4 RXTXLostPackets 0
+scalar RSUExampleCatania.node[18].nic.mac1609_4 TotalLostPackets 872
+scalar RSUExampleCatania.node[18].nic.mac1609_4 DroppedPacketsInMac 0
+scalar RSUExampleCatania.node[18].nic.mac1609_4 TooLittleTime 0
+scalar RSUExampleCatania.node[18].nic.mac1609_4 TimesIntoBackoff 124
+scalar RSUExampleCatania.node[18].nic.mac1609_4 SlotsBackoff 200
+scalar RSUExampleCatania.node[18].nic.mac1609_4 NumInternalContention 0
+scalar RSUExampleCatania.node[18].nic.mac1609_4 totalBusyTime 0.450796
+scalar RSUExampleCatania.node[18].veinsmobility startTime 22
+scalar RSUExampleCatania.node[18].veinsmobility totalTime 123
+scalar RSUExampleCatania.node[18].veinsmobility stopTime 146
+scalar RSUExampleCatania.node[18].veinsmobility minSpeed 0.14607086781138
+scalar RSUExampleCatania.node[18].veinsmobility maxSpeed 15.981457439717
+scalar RSUExampleCatania.node[18].veinsmobility totalDistance 1666.5798265669
+scalar RSUExampleCatania.node[18].veinsmobility totalCO2Emission 401.04234353124
+
